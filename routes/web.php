@@ -19,9 +19,9 @@ Route::get(
 )->name('profile');
 
 Route::controller(PetitionController::class)->group(function () {
-    Route::get('/petitions/{id}', 'show');
-    Route::post('/petitions', 'list');
-    Route::get('/petitions', 'list');
+    Route::get('/petitions/{id}', 'getSinglePetition');
+    Route::post('/petitions', 'petitions');
+    Route::get('/petitions', 'getPetitions');
     Route::delete('/petitions/{id}', 'delete');
     Route::patch('/petitions/{id}', 'patch');
 });
