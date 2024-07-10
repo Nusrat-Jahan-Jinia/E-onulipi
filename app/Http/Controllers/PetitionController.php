@@ -11,6 +11,10 @@ class PetitionController extends Controller
         return view('petition.list');
     }
 
+    public function createPetition()
+    {
+        return view('petition.create');
+    }
     public function getSinglePetition()
     {
         return view('petition.petition');

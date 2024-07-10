@@ -65,10 +65,8 @@
                     <ul class="d-flex flex-column pt-2 gap-2">
                         <li class="list-inline-item">
                             <a class="text-decoration-none fs-18-500-27 gray-text"
-                               href="/petition/create-petition-application">নতুন পিটিশন দাখিল</a>
+                               href="/petitions/create">নতুন পিটিশন দাখিল</a>
                         </li>
-
-
                         <li class="list-inline-item">
                             <a class="text-decoration-none fs-18-500-27 gray-text" href="/petition/petition-list">তালিকা(প্রক্রিয়াধীন)</a>
                         </li>
@@ -111,7 +109,6 @@
                         <li class="list-inline-item">
                             <a class="web-menu-list text-decoration-none fs-18-500-27 gray-text"
                                href="/template/upload-template">নতুন টেমপ্লেট</a></li>
-
                         <li class="list-inline-item">
                             <a class="web-menu-list text-decoration-none fs-18-500-27 gray-text"
                                href="/template/list">সম্পন্ন টেমপ্লেট তালিকা</a></li>
