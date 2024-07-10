@@ -8,11 +8,13 @@ use App\Http\Controllers\DistrictController;
 use App\Http\Controllers\PetitionController;
 use App\Http\Controllers\MasterDataController;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::resource('courts', CourtController::class);
+
 
 Route::get(
     '/user/profile',
@@ -29,7 +31,10 @@ Route::controller(PetitionController::class)->group(function () {
 });
 
 Route::controller(DivisionController::class)->group(function () {
-    Route::get('/divisions', 'list');
+    Route::get('/divisions', 'index');
+    Route::get('/divisions/create', 'create');
+    Route::get('/divisions/edit', 'edit');
+    Route::post('/divisions/edit', 'edit');
 });
 
 Route::controller(DistrictController::class)->group(function () {
